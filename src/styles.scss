@@ -1,0 +1,221 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+/* Rest of the CSS styles */
+/* styles.css */
+$primary-red: rgb(185, 137, 129);
+$primary-green: rgb(125, 131, 109);
+
+$secondary-red: rgb(241, 209, 201);
+$secondary-green: rgb(225, 227, 209);
+
+body {
+  font-family: "Roboto", Arial, sans-serif; /* Primary font family */
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: $primary-green;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background-color: $primary-red;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-section,
+.features-section,
+.pricing-section,
+.contact-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+button {
+  background-color: $primary-red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darken($primary-red, 10%);
+}
+
+.package {
+  display: inline-block;
+  margin: 20px;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px; /* Set fixed width for the pricing cards */
+}
+
+.package h3 {
+  color: $primary-green;
+}
+
+.package button {
+  background-color: $primary-green;
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.package button:hover {
+  background-color: darken($primary-green, 10%);
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Open Sans", Arial, sans-serif; /* Secondary font family */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: $primary-green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: darken($primary-green, 10%);
+}
+
+.navbar {
+  background-color: $primary-green;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1; /* Takes up remaining space */
+}
+
+.navbar-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-right ul li {
+  margin-right: 20px;
+}
+
+.navbar-right ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  height: 40px; /* Adjust as needed */
+}
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature {
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  color: $primary-green;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer-left ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-left ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-left ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-right ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
