@@ -9,9 +9,14 @@ $primary-green: rgb(125, 131, 109);
 $secondary-red: rgb(241, 209, 201);
 $secondary-green: rgb(225, 227, 209);
 
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  // font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  // "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
   margin: 0;
   padding: 0;
 }
@@ -56,14 +61,14 @@ nav ul li {
   color: lighten($secondary-green, 5%);
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 0.9rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.044);
 }
 
 .logo {
   width: calc(100vw - 500px); /* Adjust as needed */
   min-width: 100px;
-  max-width: 200px;
+  max-width: 230px;
   padding: 0;
   margin: 0;
 }
@@ -133,10 +138,11 @@ button:hover {
 .contact-section h2 {
   color: $primary-green;
   margin-bottom: 20px;
-  font-family: Verdana, sans-serif;
-  font-weight: 100;
-  // text-transform: uppercase;
-  letter-spacing: -1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-size: 1.9rem;
+  // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-form input,
@@ -147,7 +153,7 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: inherit;
-  font-family: "Open Sans", Arial, sans-serif; /* Secondary font family */
+  // font-family: "Open Sans", Arial, sans-serif; /* Secondary font family */
 }
 .contact-form label {
   float: inline-start;
@@ -227,5 +233,5 @@ h1 {
   color: $primary-green;
   font-size: 3rem;
   font-weight: 100;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
