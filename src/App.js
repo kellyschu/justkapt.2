@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.scss";
-import logo from "./greenlogo.PNG";
+import logo from "./greenbkglogo.png";
 
 const Navbar = () => {
   return (
@@ -70,7 +70,8 @@ const Footer = () => {
 const Home = () => {
   return (
     <section id="home" className="home-section">
-      <h1>Welcome to Drone Business</h1>
+      <h1>Welcome to Just Kaptured Productions</h1>
+      <h5>Professional Drone Services</h5>
       <p>Your go-to solution for aerial photography and videography.</p>
       <button>Learn More</button>
     </section>
@@ -125,9 +126,15 @@ const Contact = () => {
     <section id="contact" className="contact-section">
       <h2>Contact Us</h2>
       <form className="contact-form">
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Message"></textarea>
+        <label htmlFor="name">Name</label>
+        <input type="text" id="name" placeholder="John Doe" />
+        <label htmlFor="email">Email</label>
+        <input type="email" id="email" placeholder="johndoe@email.com" />
+        <label htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          placeholder="I'd love to chat more about.."
+        ></textarea>
         <button>Send</button>
       </form>
     </section>
