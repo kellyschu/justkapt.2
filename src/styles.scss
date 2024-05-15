@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@100;200;400;700&display=swap");
 
 /* Rest of the CSS styles */
 /* styles.css */
@@ -16,39 +16,68 @@ body {
 }
 
 nav {
-  background-color: $primary-green;
-  padding: 20px;
+  padding: 5px 20px;
 }
 
 nav ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
 }
 
-nav ul li a {
+.navbar {
+  background-color: lighten($primary-green, 10%);
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1; /* Takes up remaining space */
+}
+
+.navbar-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-right ul li {
+  margin-right: 25px;
+}
+
+.navbar-right ul li a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: lighten($secondary-green, 10%);
+  text-transform: uppercase;
+  letter-spacing: -0.1px;
+  font-size: 1.1rem;
+  // font-weight: bold;
+}
+
+.logo {
+  width: calc(100vw - 500px); /* Adjust as needed */
+  min-width: 100px;
+  max-width: 200px;
+  padding: 0;
+  margin: 0;
 }
 
 footer {
-  background-color: $primary-red;
-  color: white;
-  text-align: center;
+  background-color: darken($secondary-green, 10%);
   padding: 20px;
+  text-align: center;
 }
 
 .home-section,
 .features-section,
 .pricing-section,
 .contact-section {
-  padding: 50px 0;
+  padding: 30px 0;
   text-align: center;
 }
 
@@ -60,10 +89,12 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 button:hover {
   background-color: darken($primary-red, 10%);
+  transform: scale(1.02);
 }
 
 .package {
@@ -77,17 +108,13 @@ button:hover {
 }
 
 .package h3 {
-  color: $primary-green;
+  color: lighten($primary-green, 5%);
 }
 
 .package button {
   background-color: $primary-green;
-  display: block;
   margin-top: 20px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  display: block;
 }
 
 .package button:hover {
@@ -114,50 +141,12 @@ button:hover {
 }
 
 .contact-form button {
-  width: 100%;
-  padding: 10px;
+  width: 80%;
   background-color: $primary-green;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .contact-form button:hover {
   background-color: darken($primary-green, 10%);
-}
-
-.navbar {
-  background-color: $primary-green;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-left {
-  flex: 1; /* Takes up remaining space */
-}
-
-.navbar-right ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar-right ul li {
-  margin-right: 20px;
-}
-
-.navbar-right ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.logo {
-  height: 40px; /* Adjust as needed */
 }
 
 .features-section {
